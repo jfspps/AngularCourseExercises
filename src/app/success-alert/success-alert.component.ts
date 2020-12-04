@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuccessAlertComponent implements OnInit {
 
+  username: string = '';
+  usernameEmpty = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onTypeText(){
+    if (this.username === ''){
+      this.usernameEmpty = true;
+    } else {
+      this.usernameEmpty = false;
+    }
+  }
+
+  addUser(){
+    console.log("User added to database");
+    this.username = '';
+    this.usernameEmpty = true;
+  }
 }

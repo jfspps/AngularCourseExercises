@@ -1,2 +1,8 @@
 <p>That was a success!!</p>
 <hr>
+
+<label>Enter a username:</label>
+<input class="form-control" type="text" [(ngModel)]="username" (input)="onTypeText()">
+<p>The username entered is {{ username }}</p>
+
+<button class="btn btn-primary" [disabled]="usernameEmpty" (click)="addUser()">Add user</button>
