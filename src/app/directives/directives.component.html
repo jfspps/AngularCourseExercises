@@ -1,0 +1,9 @@
+<h3>Demonstrating the use of directives</h3>
+
+<button (click)="toggleText()">Display details</button>
+<p [ngStyle]="{backgroundColor: getBkgColor(), color: getFontColor()}" [ngClass]="{afterFifth: toggleCount > 4}"> {{ paragraphText }}</p>
+
+<div>
+    <p>Current stack, presented in an alternative form here: </p>
+    <span *ngFor="let item of toggleStack">{{ item + ' ' }}</span>
+</div>
