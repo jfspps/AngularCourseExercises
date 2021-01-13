@@ -1,5 +1,7 @@
 # BasicsAssignment
 
+This project demonstrates the use of ngClass and ngStyle directives as well as show how to pereform two-way databinding using `[(ngModel)]` for input HTML elements, i.e. input text is bound using ngModel and a parameterless method is triggered by a button press which proceeds to store the text.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
 ## Development server
